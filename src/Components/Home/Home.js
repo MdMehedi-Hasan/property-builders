@@ -16,7 +16,7 @@ const Home = () => {
                 <img width={600} height={400} src={image} alt="" />
             </section>
             <section>
-                <h1>See all reviews of our happy clients</h1>
+                <h1>See reviews of our happy clients</h1>
                 <button>See all reviews</button>
             </section>
         </div>
