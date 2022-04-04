@@ -7,14 +7,21 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import Notfound from './Components/notFound/Notfound';
 import { Route, Routes } from 'react-router-dom';
 import About from './Components/About/About';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [comments, setComments] = useState([]);
+  useEffect(() => {
+    fetch("comments.json")
+      .then((res) => res.json())
+      .then((data) => setComments(data));
+  }, []);
   return (
     <div className="App">
       <Header></Header>
       <Routes>
-                <Route path="/" element={<Home></Home>}></Route>
-                <Route path="/reviews" element={<Reviews></Reviews>}></Route>
+                <Route path="/" element={<Home comments={comments}></Home>}></Route>
+                <Route path="/reviews" element={<Reviews comments={comments}></Reviews>}></Route>
                 <Route path="dashboard" element={<Dashboard></Dashboard>}></Route>
                 <Route path="blogs" element={<Blogs></Blogs>}></Route>
                 <Route path="about" element={<About></About>}></Route>

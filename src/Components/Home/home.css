@@ -41,6 +41,12 @@
     font-weight: 700;
     font-size: 30px;
 }
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    margin: 20px;
+}
 .home-review-btn{
     padding: 16px 25px;
     background-color: rgb(47, 25, 127);
@@ -49,7 +55,7 @@
     border-radius: 10px;
     display: block;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 40px;
 }
 .home-review-btn a{
     text-decoration: none;

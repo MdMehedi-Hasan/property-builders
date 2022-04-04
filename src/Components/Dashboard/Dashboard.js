@@ -14,7 +14,6 @@ import {
 
 const Dashboard = () => {
   const [data, setData] = useState([]);
-  console.log(data);
   useEffect(() => {
     fetch(
       "https://raw.githubusercontent.com/ProgrammingHero1/product-analysis-website/main/data.json"

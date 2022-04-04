@@ -1,8 +1,10 @@
 import React from 'react';
 import image from '../../images/house.jpg'
+import Review from '../Reviews/Review';
 import './home.css'
 
-const Home = () => {
+const Home = (props) => {
+    const objComment = props.comments.slice(0,3)
     return (
         <div>
             <section className='header-intro'>
@@ -15,7 +17,12 @@ const Home = () => {
                 <img width={600} height={400} src={image} alt="" />
             </section>
             <section className='home-review'>
-                <h1>See reviews of our happy clients</h1>
+                <h1>See reviews of our happy clients:({objComment.length})</h1>
+                <div className="home-grid">
+                {
+                    objComment.map(comment => <Review comment={comment} key={comment.id}></Review>)
+                }
+                </div>
                 <button className='home-review-btn'><a href="/reviews">See all reviews</a></button>
             </section>
         </div>
