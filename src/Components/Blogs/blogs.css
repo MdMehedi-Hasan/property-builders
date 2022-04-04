@@ -1,6 +1,11 @@
 article div{
-    background-color: aqua;
+    /* background-color: aqua; */
+    border: 3px solid rgb(36, 36, 80);
     border-radius: 15px;
     margin: 10px;
     padding: 30px;
+}
+article div p{
+    font-size: 20px;
+    font-weight: 400;
 }

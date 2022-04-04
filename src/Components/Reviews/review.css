@@ -1,5 +1,5 @@
 .perComment{
-    background-color: bisque;
+    border: 2px solid rgba(222, 166, 255, 0.834);
     border-radius: 15px;
     padding: 10px;
 }

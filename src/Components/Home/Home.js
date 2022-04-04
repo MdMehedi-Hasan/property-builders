@@ -6,18 +6,17 @@ const Home = () => {
     return (
         <div>
             <section className='header-intro'>
-                <div>
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing.
+                <div className='title'>
+                    <h1>Build your dream home with <br/><span>Mohammadia Developers</span>
                     </h1>
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rerum quae, odit debitis tempora error, temporibus recusandae facilis dolorem, perferendis sit eligendi nostrum nobis asperiores impedit voluptatem molestias cupiditate quis?</p>
+                    <p>Mohammadia developers is the private developer company. For the last 75 years we are serving our customers with pride. If you are searching for a partner/mentor for your property. Mohammadia developers is the best choise.</p>
                     <button>See more</button>
                 </div>
                 <img width={600} height={400} src={image} alt="" />
             </section>
-            <section>
+            <section className='home-review'>
                 <h1>See reviews of our happy clients</h1>
-                <button>See all reviews</button>
+                <button className='home-review-btn'><a href="/reviews">See all reviews</a></button>
             </section>
         </div>
     );

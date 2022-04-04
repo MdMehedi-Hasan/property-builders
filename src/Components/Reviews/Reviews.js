@@ -9,12 +9,16 @@ const Reviews = () => {
       .then((res) => res.json())
       .then((data) => setComments(data));
   }, []);
-  return (
-    <div className="grid-comments">
+    return (
+        <div>
+            <h1 style={{fontSize:'40px' , marginLeft:'20px', display:'inline-block'}}>Some of our happy clients:- <hr /></h1>
+            
+      <div className="grid-comments">
       {comments.map((comment) => (
-        <Review comment={comment}></Review>
+        <Review comment={comment} key ={comment.id}></Review>
       ))}
-    </div>
+            </div>
+            </div>
   );
 };
 
