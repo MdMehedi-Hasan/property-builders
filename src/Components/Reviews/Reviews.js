@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Review from './Review';
-import './reviews.css'
+import './reviews.cssgit'
 
 const Reviews = () => {
     const [comments, setComments] = useState([])

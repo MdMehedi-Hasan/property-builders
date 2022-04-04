@@ -5,6 +5,7 @@ import Home from './Components/Home/Home';
 import Blogs from './Components/Blogs/Blogs';
 import Reviews from './Components/Reviews/Reviews';
 import Dashboard from './Components/Dashboard/Dashboard';
+import Notfound from './Components/notFound/Notfound';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Blogs></Blogs>
       <Reviews></Reviews>
       <Dashboard></Dashboard>
+      <Notfound></Notfound>
     </div>
   );
 }
